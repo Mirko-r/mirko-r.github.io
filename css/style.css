@@ -103,4 +103,11 @@ body{
     color: #fff;
 }
 
-
+@media screen and (max-width: 1000px) {
+.container{
+    width: 50%;
+    position: relative;
+    display: block;
+    justify-content: space-between;
+}
+}
