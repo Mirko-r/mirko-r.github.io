@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Mirko Rovere | A developer and podcaster based in Turin, Italy.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Podcast</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Mirko Rovere</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Hi ! I'm a developer and podcaster based in Turin, Italy. </p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Open Source Project</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Extractor</h3>
+              <p>
+                Extractor is a simple Linux utility to extract one or more archives from the terminal
+              </p>
+              <ul class="work__list">
+                <li>SHELL</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/Mirko-r/extractor" target="_blank" class="link__text">
+                  View source code <span>&rarr;</span>
+                </a>
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/extractor.png" class="work__image" alt="Project 1" />
+            </div>
+			</div>
+		  </div>
+		</div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Stupidamente Podcast</h2>
+		  <h5><b>"fatti non foste per viver come bruti, ma per seguir virtute e conoscienza"</b></h5>
+		  <br>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/spotify.png" class="client__logo" alt="Spotify" />
+		  <img src="./images/google.png" class="client__logo" alt="Google podcast" />
+		  <img src="./images/apple.svg" class="client__logo" alt="Apple podcast" />
+		  </div>
+		  <br>
+		  <br>
+		  <div class="work__links">
+                <a href="https://anchor.fm/stupidamente" target="_blank" class="link__text">
+                  Listen now <span>&rarr;</span>
+                </a>
+         </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+   <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+                 Hi, I'm Mirko Rovere, I started studying programming and I immediately got passionate about the Linux and open-source world. 
+				 But I felt that I had to say something more to the world, I wanted to bring my message since I also love talking, 
+				  so, in November 2020, i opened my philosophical podcast "StupidaMente"
+            </p>
+            <!-- Provide a link to your resume -->
+			  
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/photo.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+			Do you want to help me or suggest a new open source project? Are you a company or someone who wants to promote my podcast?<p></p>
+		  <h4>Write me an email now!!</h4>
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:04mirko@libero.it" class="btn">04mirko@libero.it</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Mirko-r/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/mirko-rovere-695a67203/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
