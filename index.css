@@ -30,12 +30,12 @@
     --font-size-large: 5.5rem;
     --font-size-huge: 7.5rem;
     --font-stack: 'Hk Grotesk', sans-serif;
-
+	
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
-
-    --black: #000;
-    --pink: #ff3258;
+	
+    --black: #0d3f67;
+    --pink: #6b48ff;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -220,6 +220,7 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     border: 1px solid  var(--pink);
+	border-radius: 20px;
     font-weight: 400;
 }
 
@@ -244,11 +245,13 @@ body:not(.user-is-tabbing) a:focus {
 .btn:focus::after {
     right: 0;
     background: var(--pink);
+	border-radius:20px;
 }
 
 .btn--pink {
     background: var(--pink);
     transition: all 0.2s;
+	border-radius: 20px;
 }
 
 .btn--pink::after {
@@ -258,6 +261,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink:hover,
 .btn--pink:focus {
     background: transparent;
+	border-radius:20px;
 }
 
 .link__text {
@@ -404,8 +408,9 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('header.jpg');
+    /*background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('header.jpg');*/
+	background: linear-gradient(75deg, #ffa9bf, #8483ff);
     height: 100vh;
     background-size: cover;
     background-position: center;
