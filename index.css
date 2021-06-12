@@ -450,6 +450,11 @@ body:not(.user-is-tabbing) a:focus {
     transform: translate3d(85px,0,0);
   }
 }
+@media(max-width: 600px) {
+	.waves{
+		display:none;
+	}
+}
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
