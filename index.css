@@ -451,8 +451,8 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 @media(max-width: 600px) {
-	.content{
-		display:none;
+	.waves{
+		visibility:hidden;
 	}
 }
 /* --------------------------------------- */
