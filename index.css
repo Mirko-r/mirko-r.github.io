@@ -451,7 +451,7 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 @media(max-width: 600px) {
-	.waves{
+	.content{
 		display:none;
 	}
 }
