@@ -22,7 +22,7 @@ $(window).load(function() {
         });
         MESSAGES.push({
             delay: 5200,
-            text: 'Click on the link below to go back to site'
+            text: 'Click on the link below to return to the site'
         });
         $container = $('#container');
         $message = $('#message');
