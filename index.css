@@ -410,9 +410,8 @@ body:not(.user-is-tabbing) a:focus {
   position: relative;
   width: 100%;
   height:15vh;
-  top: 700px;;
-  min-height:100px;
-  max-height:150px;
+  top: 73vh;
+  min-height: 15vh;
 }
 
 .content {
@@ -442,6 +441,7 @@ body:not(.user-is-tabbing) a:focus {
   animation-delay: -5s;
   animation-duration: 20s;
 }
+
 @keyframes move-forever {
   0% {
    transform: translate3d(-90px,0,0);
@@ -450,11 +450,13 @@ body:not(.user-is-tabbing) a:focus {
     transform: translate3d(85px,0,0);
   }
 }
+
 @media(max-width: 600px) {
 	.waves{
 		visibility:hidden;
 	}
 }
+
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
