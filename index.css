@@ -488,6 +488,10 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
+.work__links a {
+	margin: 20px;
+}
+
 .work__text {
     flex: 0 0 30%;
 }
