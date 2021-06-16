@@ -546,7 +546,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 1240px) {
     .client__logos {
-        overflow-x: scroll;
+        display: inline-block;
         padding: var(--gutter-normal);
     }
 
