@@ -235,6 +235,12 @@ html, body {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
+
+.btn--pink:hover,
+.btn--pink:focus {
+    background: transparent;
+	border-radius:20px;
+}
 .box .box__description .box__button:before {
   content: "";
   position: absolute;
@@ -250,9 +256,6 @@ html, body {
 .box .box__description .box__button:hover {
   background: transparent;
   border-color: #fff;
-}
-.box .box__description .box__button:hover:before {
-  transform: translateX(250px) rotate(45deg);
 }
 
 @keyframes upndown {
