@@ -280,17 +280,3 @@ html, body {
     width: 90px;
   }
 }
-@keyframes shine {
-  0% {
-    opacity: 0.2;
-  }
-  25% {
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0.2;
-  }
-}
