@@ -204,6 +204,22 @@ iframe {
   padding-bottom: 36px;
 }
 
+ .exit {
+  position:absolute;
+  top:3%;
+  left:2%;
+  color: white;
+  width:auto;
+  background: #6b48ff;
+  border-radius: 50px;
+  padding: 10px;
+  line-height: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
 input.input100 {
   height: 50px;
   border-radius: 25px;
@@ -235,7 +251,7 @@ textarea.input100 {
   font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
-  color: #666666;
+  color: #e6e6e6;
 }
 
 
@@ -254,7 +270,7 @@ textarea.input100 {
   color: rgba(132,106,221, 0.5);
 }
 
-.input100:focus + .focus-input100 {
+.input100:focus + .focus-input100{
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
@@ -355,6 +371,10 @@ textarea.input100 {
   .contact100-form {
     width: 44%;
   }
+ .exit{
+   top:6%;
+   left:6%;
+}
 }
 
 @media (max-width: 992px) {
@@ -369,6 +389,10 @@ textarea.input100 {
   .contact100-form {
     width: 55%;
   }
+ .exit{
+   top:6%;
+   left:6%;
+}
 }
 
 @media (max-width: 768px) {
@@ -383,12 +407,21 @@ textarea.input100 {
   .contact100-form {
     width: 100%;
   }
+.exit{
+   top:6%;
+   left:6%;
+}
 }
 
 @media (max-width: 576px) {
   .wrap-contact100 {
     padding: 110px 15px 157px 15px;
   }
+
+.exit{
+   top:6%;
+   left:6%;
+}
 }
 
 
