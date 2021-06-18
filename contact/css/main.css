@@ -157,7 +157,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(132,106,221,0.9);
+  background:  #0d3f67;
 }
 
 .wrap-contact100 {
@@ -179,6 +179,7 @@ iframe {
 /*------------------------------------------------------------------
 [  ]*/
 .contact100-pic {
+  position: absolute;
   width: 310px;
   padding-top: 55px;
 }
@@ -425,7 +426,7 @@ textarea.input100 {
   }
 
 .exit{
-   top:7%;
+   top:6%;
    left:6%;
 }
 }
