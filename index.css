@@ -404,12 +404,7 @@ body:not(.user-is-tabbing) a:focus {
     }
     .headill{
         left: 0%;
-    }
-}
-
-@media(min-width: 200px){
-    .headill{
-	bottom: -20%;
+	bottom: -10%;
     }
 }
 
