@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/png" href="assets/img/portfolio.ico"/>
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Mirko Rovere</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
+
+                    <img src="assets/img/undraw_dev_productivity_umsq.svg" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/undraw_dev_productivity_umsq.svg" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'm Mirko Rovere</h2>
+                        <span class="about__profession">Developer and podcaster</span>
+                        <p class="about__text"> Hi, I'm Mirko Rovere, I started studying programming and I immediately got passionate about the Linux and open-source world. 
+                            But I felt that I had to say something more to the world, I wanted to bring my message since I also love talking, 
+                             so, in November 2020, i opened my philosophical podcast "StupidaMente"</p>
+                        <div class="about__social">
+                            <a href="https://github.com/Mirko-r" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.paypal.me/stupidamentepod" class="about__social-icon"><i class='bx bxl-paypal'></i></a>
+                            <a href="https://open.spotify.com/show/58cchaSIqWwuQ9pRYeX4kY?si=2k9GBDHTQdGLzufLIYQA0g&dl_branch=1" class="about__social-icon"><i class='bx bxl-spotify'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Development</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__name">Python</span>
+                        <span class="skills__name">C</span>
+                        <span class="skills__name">C++</span>
+                        
+                        <h3 class="skills__subtitle">Other</h3>
+                        <span class="skills__name">Adobe Premiere pro</span>
+                        <span class="skills__name">Adobe Audition</span>
+                        <span class="skills__name">Podcasting</span>
+                        <span class="skills__name">Linux</span>
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="assets/img/skills.svg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Github Stats</h2>
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                    <a href="https://github.com/Mirko-r">
+                        <img src="https://github-readme-stats.vercel.app/api?username=Mirko-r&show_icons=true&theme=light&line_height=27" alt="Mirko's github stats"/>
+                       </a>
+                       </div>
+                       <div class="portfolio__img">
+                           <a href="https://github.com/Mirko-r">
+                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mirko-r&theme=light" />
+                          </a>
+                       </div>
+                </div>
+                <h2 class="section-title">Open source project</h2>
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                         <a href="https://github.com/Mirko-r/extractor" title="extractor">
+                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=extractor&theme=light&border=10dafb">
+                      </a>
+                    </div>
+                    <div class="portfolio__img">
+                        <a href="https://github.com/Mirko-r/mirko-r.github.io" title="My site">
+                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=mirko-r.github.io&theme=light&border=10dafb">
+                      </a>
+                    </div>
+                    <div class="portfolio__img">
+                        <a href="https://github.com/Mirko-r/pyWeather" title="pyWeather">
+                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=pyWeather&theme=light&border=10dafb">
+                      </a>
+                    </div>
+                    <div class="portfolio__img">
+                        <a href="https://github.com/Mirko-r/Notepy" title="Notepy">
+                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=Notepy&theme=light&border=10dafb">
+                      </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact me</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Do you want to help me or suggest a new open source project? Are you a company or someone who wants to promote my podcast?</h3>
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">04mirko@libero.it</span>
+                    </div>
+
+                    <form action="https://getform.io/f/04c46bd7-4f36-4f7f-bf9b-a3bb160d9553" method="POST" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+                        <textarea class="contact__input" rows=10 name="message" placeholder="Message"></textarea>
+                        <input type="submit" value="Send" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">Mirko Rovere</h2>
+                    <p class="footer__text">I'm Mirko Rovere and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="https://instagram.com/mirko_rovere" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
