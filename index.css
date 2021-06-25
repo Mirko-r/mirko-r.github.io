@@ -407,10 +407,10 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-@media(max-width: 400px){
+@media(min-width: 200px){
     .headill{
 	bottom: -20%;
-	}
+    }
 }
 
 /* --------------------------------------- */
