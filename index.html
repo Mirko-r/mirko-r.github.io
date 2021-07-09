@@ -1,17 +1,19 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mirko Rovere - Portfolio</title>
         <meta name="description" content="Hi, I'm Mirko Rovere, I started studying programming and I immediately got passionate about the Linux and open-source world. 
-                            But I felt that I had to say something more to the world, I wanted to bring my message since I also love talking, 
-                             so, in November 2020, i opened my philosophical podcast 'StupidaMente'">
+        But I felt that I had to say something more to the world, I wanted to bring my message since I also love talking, so, in November 2020,
+         i opened my philosophical podcast 'StupidaMente'">
+        <meta name="author" content="Mirko Rovere">
+        <meta name="robots" content="index, follow">
+        <meta name="rating" content="safe for kids">
+        <link rel="icon" type="image/png" href="assets/img/portfolio.ico"/>
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/png" href="assets/img/portfolio.ico"/>
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <title>Mirko Rovere - Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -65,7 +67,7 @@
                         <span class="about__profession">Developer and podcaster</span>
                         <p class="about__text"> Hi, I'm Mirko Rovere, I started studying programming and I immediately got passionate about the Linux and open-source world. 
                             But I felt that I had to say something more to the world, I wanted to bring my message since I also love talking, 
-                             so, in November 2020, i opened my philosophical podcast 'StupidaMente'</p>
+                             so, in November 2020, i opened my philosophical podcast "StupidaMente"</p>
                         <div class="about__social">
                             <a href="https://github.com/Mirko-r" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                             <a href="https://www.paypal.me/stupidamentepod" class="about__social-icon"><i class='bx bxl-paypal'></i></a>
@@ -84,6 +86,7 @@
                         <h3 class="skills__subtitle">Development</h3>
                         <span class="skills__name">Html</span>
                         <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
                         <span class="skills__name">Python</span>
                         <span class="skills__name">C</span>
                         <span class="skills__name">C++</span>
@@ -151,13 +154,13 @@
                         <h3 class="contact__subtitle">EMAIL</h3>
                         <span class="contact__text">04mirko@libero.it</span>
                     </div>
-
-                    <form action="https://getform.io/f/04c46bd7-4f36-4f7f-bf9b-a3bb160d9553" method="POST" class="contact__form">
+                    <!-- action="https://getform.io/f/04c46bd7-4f36-4f7f-bf9b-a3bb160d9553" -->
+                    <form method="POST" class="contact__form" id ="mail_form">
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
+                            <input type="text" placeholder="Name" class="contact__input" id = "input-name">
+                            <input type="mail" placeholder="Email" class="contact__input" id = "input-email">
                         </div>
-                        <textarea class="contact__input" rows=10 name="message" placeholder="Message"></textarea>
+                        <textarea class="contact__input" rows=10 name="message" placeholder="Message" id = "input-message"></textarea>
                         <input type="submit" value="Send" class="contact__button">
                     </form>
                 </div>
@@ -191,7 +194,11 @@
 
             </div>
         </footer>
-
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="./assets/js/mail.js"></script>
+        
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
