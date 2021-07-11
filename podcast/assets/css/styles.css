@@ -18,7 +18,7 @@
 /*===== Fuente y tipografia =====*/
 :root{
     --body-font: 'Montserrat', sans-serif;
-    --big-font-size: 5.25rem;
+    --big-font-size: 6.25rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -487,5 +487,17 @@ img{
     .home__img {
         width: 500px;
         right: 24%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home__title{
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home__title{
+        font-size: 4em;
     }
 }
