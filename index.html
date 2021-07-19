@@ -17,17 +17,17 @@
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
         
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     </head>
     <body>
-
         <!--===== HEADER =====-->
         <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
+            <nav class="nav bd-grid" id="navbar">
+                <div id="navname">
                     <a href="#" class="nav__logo">Mirko Rovere</a>
                 </div>
 
@@ -36,9 +36,8 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="podcast/podcast.html" class="nav__link">Podcast</a></li>
+                        <li class="nav__item"><a href="#career" class="nav__link">Career</a></li>
+                        <li class="nav__item"><a href="#more" class="nav__link">More</a></li>
                     </ul>
                 </div>
 
@@ -59,7 +58,7 @@
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
 
-                    <img src="assets/img/undraw_dev_productivity_umsq.svg" alt="" class="home__img">
+                    <img src="assets/img/hello.svg" alt="" class="home__img">
                 </div>
             </section>
             
@@ -75,13 +74,12 @@
                     <div>
                         <h2 class="about__subtitle">I'm Mirko Rovere</h2>
                         <span class="about__profession">Developer and podcaster</span>
-                        <p class="about__text"> Hi, I'm Mirko Rovere, I started studying programming and I immediately got passionate about the Linux and open-source world. 
-                            But I felt that I had to say something more to the world, I wanted to bring my message since I also love talking, 
-                             so, in November 2020, i opened my philosophical podcast "StupidaMente"</p>
+                        <p class="about__text"> I started studying programming and I immediately got passionate about the Linux and open-source world.
+                             But I felt that I had to say something more to the world, I wanted to bring my message since I also love talking,
+                              so, in November 2020, i opened my philosophical podcast "StupidaMente"</p>
                         <div class="about__social">
                             <a href="https://github.com/Mirko-r" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                             <a href="https://www.paypal.me/stupidamentepod" class="about__social-icon"><i class='bx bxl-paypal'></i></a>
-                            <a href="https://open.spotify.com/show/58cchaSIqWwuQ9pRYeX4kY?si=2k9GBDHTQdGLzufLIYQA0g&dl_branch=1" class="about__social-icon"><i class='bx bxl-spotify'></i></a>
                         </div>
                     </div>
                 </div>
@@ -100,61 +98,149 @@
                         <span class="skills__name">Python</span>
                         <span class="skills__name">C</span>
                         <span class="skills__name">C++</span>
+                        <span class="skills__name">Shell</span>
+                        <span class="skills__name">Web development</span>
                         
-                        <h3 class="skills__subtitle">Other</h3>
+                        <h3 class="skills__subtitle">Audio/Video</h3>
                         <span class="skills__name">Adobe Premiere pro</span>
                         <span class="skills__name">Adobe Audition</span>
                         <span class="skills__name">Podcasting</span>
+
+                        <h3 class="skills__subtitle">Os</h3>
+                        <span class="skills__name">Windows</span>
                         <span class="skills__name">Linux</span>
+                        <span class="skills__name">Android</span>
                     </div>
 
-                    <div class="skills__img">
-                        <img src="assets/img/skills.svg" alt="">
+                    <div class="skills__img"> <!--==== Github most used languages ====-->
+                        <img src="https://metrics.lecoq.io/Mirko-r?template=classic&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&languages=1&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.recent.load=300&languages.recent.days=14&config.timezone=Europe%2FRome"/>
                     </div>
                 </div>
+                <br>
+                <br>
             </section>
 
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Github Stats</h2>
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                    <a href="https://github.com/Mirko-r">
-                        <img src="https://github-readme-stats.vercel.app/api?username=Mirko-r&show_icons=true&theme=light&line_height=27" alt="Mirko's github stats"/>
-                       </a>
-                       </div>
-                       <div class="portfolio__img">
-                           <a href="https://github.com/Mirko-r">
-                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mirko-r&theme=light" />
-                          </a>
-                       </div>
-                </div>
-                <h2 class="section-title">Open source project</h2>
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                         <a href="https://github.com/Mirko-r/extractor" title="extractor">
-                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=extractor&theme=light&border=10dafb">
-                      </a>
+            <!--===== CARREER ====-->
+            <section class="skills section" id="career">
+
+                <h2 class="section-title">Career</h2>
+
+                <section id="cd-timeline" class="cd-container">
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+            
+                        <div class="cd-timeline-content left">
+                            <h2>Start hig school</h2>
+                    <div class="timeline-content-info">
+                      <span class="timeline-content-info-title">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        Student
+                      </span>
+                      <span class="timeline-content-info-date">
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        September 2018 
+                      </span>
                     </div>
-                    <div class="portfolio__img">
-                        <a href="https://github.com/Mirko-r/mirko-r.github.io" title="My site">
-                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=mirko-r.github.io&theme=light&border=10dafb">
-                      </a>
+                            <p>An IT school is the first place where you really learn to code, so what are the best things I've learned?</p>
+                    <ul class="content-skills">
+                    <li>C</li>
+                    <li>SHELL</li>
+                    <li>ARDUINO</li>
+                    <li>Linux</li>
+                    </ul>
+                        </div> 
+                    </div> 
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+            
+                        <div class="cd-timeline-content right">
+                            <h2>StupidaMente Podcast foundationt</h2>
+                    <div class="timeline-content-info">
+                      <span class="timeline-content-info-title">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        Podcaster
+                      </span>
+                      <span class="timeline-content-info-date">
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        November 2020
+                      </span>
                     </div>
-                    <div class="portfolio__img">
-                        <a href="https://github.com/Mirko-r/pyWeather" title="pyWeather">
-                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=pyWeather&theme=light&border=10dafb">
-                      </a>
+                            <p>When someone hears your voice, it is incredibly personal. They can hear your excitement, your emotion. 
+                                It can be difficult to convey those things with written words. 
+                                When someone listens to your voice while exercising at the gym, or driving their car for example,
+                                it is the closest thing to having you right there next to them and having a conversation.
+                                As your audience listens to more of your episodes, they begin to develop a connection to you.
+                                People will begin to like you not just for the content that you share, but for your specific communication style.</p>
+                    <ul class="content-skills">
+                    <li>Adobe audition</li>
+                    <li>Podcasting</li>
+                    </ul>
+                        </div> 
+                    </div> 
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+            
+                        <div class="cd-timeline-content left">
+                            <h2>StupidaMente podcast elected 
+                                as one of the emerging podcasts of 2020</h2>
+                    <div class="timeline-content-info">
+                      <span class="timeline-content-info-title">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        Podcaster
+                      </span>
+                      <span class="timeline-content-info-date">
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        June 2021
+                      </span>
                     </div>
-                    <div class="portfolio__img">
-                        <a href="https://github.com/Mirko-r/Notepy" title="Notepy">
-                        <img  height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Mirko-r&repo=Notepy&theme=light&border=10dafb">
-                      </a>
+                            <p>On June 12, StupidaMnete podcast is
+                                elected as one of the emerging podcasts of 2020 
+                                with more than ten thousand plays in 7 months!</p>
+                        </div> 
+                    </div> 
+
+                    <!---<div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div>
+            
+                        <div class="cd-timeline-content right">
+                            <h2>Start stage</h2>
+                    <div class="timeline-content-info">
+                      <span class="timeline-content-info-title">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        Coder
+                      </span>
+                      <span class="timeline-content-info-date">
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        June 2021
+                      </span>
                     </div>
-                </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac convallis sapien. Phasellus id fermentum nunc. 
+                            </p>
+                    <ul class="content-skills">
+                    <li>Design</li>
+                    <li>Web Development</li>
+                    </ul>
+                        </div> 
+                    </div> --->
+            
+                   
+                </section> 
+              <script src='https://use.fontawesome.com/4d74086fc6.js'></script>
             </section>
 
-            <!--===== CONTACT =====-->
+            <!--===== MORE ====-->
+            <section class="skills section" id="more">
+                <h2 class="section-title">More</h2>
+            </section>
+
+            <!--===== CONTACT ====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact me</h2>
 
@@ -175,9 +261,7 @@
                     </form>
                 </div>
             </section>
-        </main>
-
-        <!--===== FOOTER =====-->
+            <!--===== FOOTER =====-->
         <footer class="footer section">
             <div class="footer__container bd-grid">
                 <div class="footer__data">
@@ -191,9 +275,8 @@
                         <li><a href="#home" class="footer__link">Home</a></li>
                         <li><a href="#about" class="footer__link">About</a></li>
                         <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="podcast/podcast.html" class="footer__link">Podcast</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                        <li><a href="#career" class="footer__link">Career</a></li>
+                        <li><a href="#more" class="footer__link">More</a></li>
                     </ul>
                 </div>
                 
@@ -202,15 +285,15 @@
                     <a href="https://instagram.com/mirko_rovere" class="footer__social"><i class='bx bxl-instagram' ></i></a>
                 </div>
 
-
             </div>
         </footer>
-
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        
 
     </body>
 </html>
