@@ -30,7 +30,7 @@ function scrollActive(){
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
+        const sectionTop = current.offsetTop - 100;
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
@@ -49,8 +49,8 @@ const sr = ScrollReveal({
     reset: true
 })
 
-/* SCROLL NAV*/
-sr.reveal('#navname', )
+/* SCROLL NAV
+sr.reveal('#navname', )*/
 /*SCROLL HOME*/
 sr.reveal('.home__title', {})
 sr.reveal('.home__scroll', {delay: 200})
@@ -78,3 +78,6 @@ sr.reveal('.contact__button', {delay: 600})
 sr.reveal('.cd-timeline-block', {delay: 400})
 sr.reveal('.left', {origin:'left', delay: 400})
 sr.reveal('.right', {origin:'right', delay: 400})
+
+/*SCROLL MORE*/
+sr.reveal('.container', {distance: '50px', origin: 'top', delay:400})
