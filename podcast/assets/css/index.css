@@ -127,13 +127,6 @@ body {
     letter-spacing: 2px;
 }
 
-.host-item .text::first-letter {
-    margin-top: 5%;
-    text-transform: capitalize;
-    color: #5656f0;
-    font-size: 40px;
-}
-
 .host-item .text {
     display: inline-block;
     margin-top: 3%;
