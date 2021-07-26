@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'podcastregular';
+    src: url('fonts/podcast-webfont.woff2') format('woff2'), url('fonts/podcast-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.section .section-title {
+    display: flex;
+    justify-content: center;
+    margin: 2% auto 0;
+    font-size: 40px;
+}
+
+.section-title {
+    padding-bottom: 5%;
+}
+
+.section-podcast {
+    padding-bottom: 5%;
+    background-color: #6969E1;
+    color: #ffffff;
+}
+
+.section-episodes,
+.section-hosts,
+.section-data {
+    padding-top: 2%;
+    background-color: white;
+    padding-bottom: 2%;
+    overflow-y: hidden;
+}
+
+.podcast-container {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1224px;
+    margin: 2% auto 0;
+    display: flex;
+}
+
+.podcast-container .player {
+    margin-top: auto;
+    flex: 0.6;
+    margin-right: 5%;
+}
+
+.podcast-container .player p strong {
+    color: #ffffff;
+    font-family: "podcastregular";
+    font-size: 72px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 72px;
+    letter-spacing: -2.4px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-bottom: 20%;
+}
+
+.podcast-container .player .ascolta {
+    color: #ffffff;
+    font-family: "Rubik", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 10%;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.podcast-container canvas {
+    float: right;
+    flex: 0.5;
+    position: relative;
+    padding: 2%;
+}
+
+.host-container {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.host-item {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 25%;
+    text-align: center;
+}
+
+.host-item .photo {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    margin: 0 auto;
+}
+
+.host-item .photo img {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+
+.host-item .title {
+    margin-top: 5%;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.host-item .subtitle {
+    color: #5656f0;
+    margin-top: 2%;
+    letter-spacing: 2px;
+}
+
+.host-item .text::first-letter {
+    margin-top: 5%;
+    text-transform: capitalize;
+    color: #5656f0;
+    font-size: 40px;
+}
+
+.host-item .text {
+    display: inline-block;
+    margin-top: 3%;
+    width: 80%;
+    text-align: left;
+}
+
+.host-item .text span {
+    text-transform: capitalize;
+    color: #5656f0;
+    font-size: 40px;
+    display: block;
+    float: left;
+    line-height: 1;
+    margin-right: 2%;
+}
+
+.host-item .icons {
+    padding: 2%;
+    margin-top: auto;
+}
+
+.host-item .icons i {
+    color: #171717;
+    font-size: 35px;
+}
+
+.host-item .icons i:hover {
+    color: #5656f0;
+}
+
+@media screen and (max-width: 900px) {
+    .host-item {
+        flex: 0 0 40%;
+    }
+    .podcast-container {
+        position: relative;
+        width: 100%;
+        max-width: 1024px;
+        margin: 2% auto 0;
+        display: block;
+    }
+    .podcast-container canvas {
+        float: left;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .host-container {
+        flex-direction: column;
+    }
+    .host-item {
+        flex: 0 0 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .host-item .icons {
+        display: flex;
+        margin-top: 0;
+        justify-content: center;
+        margin-left: -2%;
+        width: 100%;
+    }
+    .host-item .photo {
+        overflow: hidden;
+        border-radius: 50%;
+        width: 25%;
+        height: auto;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .host-item .host-text {
+        text-align: left;
+        margin-left: 2%;
+        width: 70%;
+    }
+    .host-item .title {
+        margin-top: 0;
+        font-size: 20px;
+    }
+}

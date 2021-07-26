@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- ===== BOX ICONS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="assets/js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+    <div class="section section-podcast">
+        <div class="meet" style="visibility: hidden;">Meet</div>
+        <div class="section-title"><strong>the podcast</strong></div>
+
+        <div class="podcast-container">
+            <div class="player">
+                <p><strong> Listen to the last episode here </strong></p>
+                <p class="ascolta">
+                    Subscibe on:&nbsp;<br />
+                    <a href="https://open.spotify.com/show/58cchaSIqWwuQ9pRYeX4kY"><i class="fab fa-spotify"></i
+            ></a> &nbsp;
+                    <a href="https://podcasts.apple.com/it/podcast/stupidamente/id1538650240"><i class="fas fa-podcast"></i
+            ></a> &nbsp;
+                    <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zZTQ0ZTMzMC9wb2RjYXN0L3Jzcw=="><i class="fab fa-google"></i></a
+            >&nbsp;
+            <a href="https://radiopublic.com/stupidamente-GqMQV1"
+              ><i class="fas fa-broadcast-tower"></i></a
+            >&nbsp;
+            <a href="https://anchor.fm/s/3e44e330/podcast/rss"
+              ><i class="fas fa-rss"></i
+            ></a>
+                </p>
+                <iframe class="episodes" src="https://open.spotify.com/embed/show/58cchaSIqWwuQ9pRYeX4kY?theme=1" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <canvas id="canvas"> </canvas>
+        </div>
+    </div>
+
+    <div class="section section-episodes">
+        <div class="section-title">
+            <strong>All episodes</strong>
+        </div>
+        <iframe class="episodes" src="https://www.listennotes.com/podcasts/stupidamente-mirko-rovere-DsgYbfpUiwH/embed/" height="600px" width="90%" style="width: 1px; min-width: 90%; margin: 0 auto" frameborder="0" scrolling="no" loading="lazy"></iframe>
+    </div>
+    <div class="section section-data">
+        <div class="section-title">
+            <strong>Hearded from all the world</strong>
+        </div>
+        <div class="my-12" x-data="{ width: '63' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
+                bg-purple-400
+                rounded
+                h-6
+                text-center text-white text-sm
+                transition
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Europe'"></div>
+                </div>
+                <!-- End Regular with text version -->
+            </div>
+        </div>
+
+        <div class="my-12" x-data="{ width: '48' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
+                bg-purple-400
+                rounded
+                h-6
+                text-center text-white text-sm
+                transition
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Americas'">
+                        <i class="flag flag-germany"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
+            </div>
+        </div>
+        <div class="my-12" x-data="{ width: '13' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
+                bg-purple-400
+                rounded
+                h-6
+                text-center text-white text-sm
+                transition
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Asia'">
+                        <i class="flag flag-united-states"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
+            </div>
+        </div>
+        <div class="my-12" x-data="{ width: '10' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
+                bg-purple-400
+                rounded
+                h-6
+                text-center text-white text-sm
+                transition
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Africa'">
+                        <i class="flag flag-russia"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
+            </div>
+        </div>
+        <div class="my-12" x-data="{ width: '6' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
+                bg-purple-400
+                rounded
+                h-6
+                text-center text-white text-sm
+                transition
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Oceania'">
+                        <i class="flag flag-switzerland"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-hosts">
+        <div class="section-title"><strong>the hosts</strong></div>
+        <div class="host-container">
+            <div class="host-item">
+                <div class="photo">
+                    <img src="assets/img/moi.jpg" alt="" />
+                </div>
+                <div class="host-text">
+                    <div class="title">
+                        <strong>Mirko</strong>
+                    </div>
+                    <div class="subtitle">Host</div>
+                    <div class="text">
+                        <span>M</span>ost people talk without listening. Very few listen without speaking. It is very rare to find someone who knows how to talk and listen.
+                    </div>
+                </div>
+                <div class="icons">
+                    <a href="https://instagram.com/mirko_rovere" class="about__social-icon"><i class="bx bxl-instagram"></i
+            ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="assets/js/wave.js"></script>
+</body>
+
+</html>
