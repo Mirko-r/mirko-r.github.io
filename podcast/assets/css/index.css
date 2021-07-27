@@ -75,6 +75,10 @@ body {
     margin-bottom: 5%;
 }
 
+.podcast-container .player p {
+    padding-left: 5%;
+}
+
 .podcast-container canvas {
     float: right;
     flex: 0.5;
