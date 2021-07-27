@@ -1,240 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="assets/css/index.css" />
     <title>StupidaMente - podcast</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/img/mic_microphone_podcast_record_voice_icon_123292.ico"
-    />
+    <link rel="icon" type="image/png" href="assets/img/mic_microphone_podcast_record_voice_icon_123292.ico" />
     <!-- ===== BOX ICONS ===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Serif"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <script src="assets/js/scroll.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script>
-  </head>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
 
-  <body>
-    <nav class="bg-white shadow-lg">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="flex justify-between">
-          <div class="flex space-x-7">
-            <!-- Primary Navbar items -->
-            <div class="hidden md:flex items-center space-x-1">
-              <a
-                href=""
-                class="py-4 px-2 text-purple-500 border-b-4 font-semibold"
-                >Meet the podcast</a
-              >
-              <a
-                href="#episodes"
-                class="py-4 px-2 text-purple-500 font-semibold"
-                >Listen all episodes</a
-              >
-              <a href="#hearded" class="py-4 px-2 text-purple-500 font-semibold"
-                >Hearded from all the word</a
-              >
-              <a href="#hosts" class="py-4 px-2 text-purple-500 font-semibold"
-                >Meet the hosts</a
-              >
-              <a
-                href="../index.html"
-                class="py-4 px-2 text-purple-500 font-semibold"
-                >Back to home</a
-              >
-              <a
-                href="../notepy/index.html"
-                class="py-4 px-2 text-purple-500 font-semibold"
-                >Notepy</a
-              >
-            </div>
-          </div>
+<body>
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+        <div class="flex-1 flex justify-between items-center">
 
-          <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-              <svg
-                class="w-6 h-6 text-purple-500"
-                x-show="!showMenu"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
         </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="hidden mobile-menu">
-        <ul class="">
-          <li class="active">
-            <a
-              href="#"
-              class="
-                block
-                text-sm
-                px-2
-                py-4
-                text-white
-                bg-purple-500
-                font-semibold
-              "
-              >Meet the podcast</a
-            >
-          </li>
-          <li>
-            <a
-              href="#episodes"
-              class="
-                block
-                text-black-500
-                px-2
-                py-4
-                hover:bg-purple-500 hover:text-white
-                transition
-                duration-300
-              "
-              >Listen all episodes</a
-            >
-          </li>
-          <li>
-            <a
-              href="#hearded"
-              class="
-                block
-                text-black-500
-                px-2
-                py-4
-                hover:bg-purple-500 hover:text-white
-                transition
-                duration-300
-              "
-              >Hearded from all the word</a
-            >
-          </li>
-          <li>
-            <a
-              href="#hosts"
-              class="
-                block
-                text-black-500
-                px-2
-                py-4
-                hover:bg-purple-500 hover:text-white
-                transition
-                duration-300
-              "
-              >Meet the podcast</a
-            >
-          </li>
-          <li>
-            <a
-              href="../index.html"
-              class="
-                block
-                text-black-500
-                px-2
-                py-4
-                hover:bg-purple-500 hover:text-white
-                transition
-                duration-300
-              "
-              >Back to home</a
-            >
-          </li>
-          <li>
-            <a
-              href="../notepy/index.html"
-              class="
-                block
-                text-black-500
-                px-2
-                py-4
-                hover:bg-purple-500 hover:text-white
-                transition
-                duration-300
-              "
-              >Notepy</a
-            >
-          </li>
-        </ul>
-      </div>
-      <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
 
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-      </script>
-    </nav>
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+            <nav>
+                <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">The podcast</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#episodes">All episodes</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#hearded">A bit of data</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#hosts">The hosts</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="../index.html">Back to home</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="../notepy/index.html">Notepy</a></li>
+                </ul>
+            </nav>
+        </div>
+        <style>
+            #menu-toggle:checked+#menu {
+                display: block;
+            }
+        </style>
+    </header>
     <div class="section section-podcast">
-      <div class="meet" style="visibility: hidden">Meet</div>
-      <div class="section-title"><strong>Meet the podcast</strong></div>
+        <div class="meet" style="visibility: hidden">Meet</div>
+        <div class="section-title"><strong>Meet the podcast</strong></div>
 
-      <div class="podcast-container">
-        <div class="player">
-          <p><strong> Listen to the last episode here </strong></p>
-          <p class="ascolta">
-            Subscibe on:&nbsp;<br />
-            <a href="https://open.spotify.com/show/58cchaSIqWwuQ9pRYeX4kY"
-              ><i class="fab fa-spotify"></i
-            ></a>
-            &nbsp;
-            <a
-              href="https://podcasts.apple.com/it/podcast/stupidamente/id1538650240"
-              ><i class="fas fa-podcast"></i
-            ></a>
-            &nbsp;
-            <a
-              href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zZTQ0ZTMzMC9wb2RjYXN0L3Jzcw=="
-              ><i class="fab fa-google"></i></a
+        <div class="podcast-container">
+            <div class="player">
+                <p><strong> Listen to the last episode here </strong></p>
+                <p class="ascolta">
+                    Subscibe on:&nbsp;<br />
+                    <a href="https://open.spotify.com/show/58cchaSIqWwuQ9pRYeX4kY"><i class="fab fa-spotify"></i
+            ></a> &nbsp;
+                    <a href="https://podcasts.apple.com/it/podcast/stupidamente/id1538650240"><i class="fas fa-podcast"></i
+            ></a> &nbsp;
+                    <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zZTQ0ZTMzMC9wb2RjYXN0L3Jzcw=="><i class="fab fa-google"></i></a
             >&nbsp;
             <a href="https://radiopublic.com/stupidamente-GqMQV1"
               ><i class="fas fa-broadcast-tower"></i></a
@@ -242,213 +69,142 @@
             <a href="https://anchor.fm/s/3e44e330/podcast/rss"
               ><i class="fas fa-rss"></i
             ></a>
-          </p>
-          <iframe
-            class="episodes"
-            src="https://open.spotify.com/embed/show/58cchaSIqWwuQ9pRYeX4kY?theme=1"
-            width="100%"
-            height="232"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
+                </p>
+                <iframe class="episodes" src="https://open.spotify.com/embed/show/58cchaSIqWwuQ9pRYeX4kY?theme=1" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <canvas id="canvas"> </canvas>
         </div>
-        <canvas id="canvas"> </canvas>
-      </div>
     </div>
 
     <div class="section section-episodes" id="episodes">
-      <div class="section-title">
-        <strong>All episodes</strong>
-      </div>
-      <iframe
-        class="episodes"
-        src="https://www.listennotes.com/podcasts/stupidamente-mirko-rovere-DsgYbfpUiwH/embed/"
-        height="600px"
-        width="90%"
-        style="width: 1px; min-width: 90%; margin: 0 auto"
-        frameborder="0"
-        scrolling="no"
-        loading="lazy"
-      ></iframe>
+        <div class="section-title">
+            <strong>All episodes</strong>
+        </div>
+        <iframe class="episodes" src="https://www.listennotes.com/podcasts/stupidamente-mirko-rovere-DsgYbfpUiwH/embed/" height="600px" width="90%" style="width: 1px; min-width: 90%; margin: 0 auto" frameborder="0" scrolling="no" loading="lazy"></iframe>
     </div>
     <div class="section section-data" id="hearded">
-      <div class="section-title">
-        <strong>Hearded from all the world</strong>
-      </div>
-      <div class="my-12" x-data="{ width: '63' }">
-        <!-- Light mode -->
-        <div class="mx-12 w-auto bg-white rounded">
-          <!-- Start Regular with text version -->
-          <div
-            class="bg-gray-400 rounded h-6 mt-5"
-            role="progressbar"
-            :aria-valuenow="width"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              class="
+        <div class="section-title">
+            <strong>Hearded from all the world</strong>
+        </div>
+        <div class="my-12" x-data="{ width: '63' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
                 bg-purple-400
                 rounded
                 h-6
                 text-center text-white text-sm
                 transition
-              "
-              :style="`width: ${width}%; transition: width 2s;`"
-              x-text="'Europe'"
-            ></div>
-          </div>
-          <!-- End Regular with text version -->
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Europe'"></div>
+                </div>
+                <!-- End Regular with text version -->
+            </div>
         </div>
-      </div>
 
-      <div class="my-12" x-data="{ width: '48' }">
-        <!-- Light mode -->
-        <div class="mx-12 w-auto bg-white rounded">
-          <!-- Start Regular with text version -->
-          <div
-            class="bg-gray-400 rounded h-6 mt-5"
-            role="progressbar"
-            :aria-valuenow="width"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              class="
+        <div class="my-12" x-data="{ width: '48' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
                 bg-purple-400
                 rounded
                 h-6
                 text-center text-white text-sm
                 transition
-              "
-              :style="`width: ${width}%; transition: width 2s;`"
-              x-text="'Americas'"
-            >
-              <i class="flag flag-germany"></i>
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Americas'">
+                        <i class="flag flag-germany"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
             </div>
-          </div>
-          <!-- End Regular with text version -->
         </div>
-      </div>
-      <div class="my-12" x-data="{ width: '13' }">
-        <!-- Light mode -->
-        <div class="mx-12 w-auto bg-white rounded">
-          <!-- Start Regular with text version -->
-          <div
-            class="bg-gray-400 rounded h-6 mt-5"
-            role="progressbar"
-            :aria-valuenow="width"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              class="
+        <div class="my-12" x-data="{ width: '13' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
                 bg-purple-400
                 rounded
                 h-6
                 text-center text-white text-sm
                 transition
-              "
-              :style="`width: ${width}%; transition: width 2s;`"
-              x-text="'Asia'"
-            >
-              <i class="flag flag-united-states"></i>
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Asia'">
+                        <i class="flag flag-united-states"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
             </div>
-          </div>
-          <!-- End Regular with text version -->
         </div>
-      </div>
-      <div class="my-12" x-data="{ width: '10' }">
-        <!-- Light mode -->
-        <div class="mx-12 w-auto bg-white rounded">
-          <!-- Start Regular with text version -->
-          <div
-            class="bg-gray-400 rounded h-6 mt-5"
-            role="progressbar"
-            :aria-valuenow="width"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              class="
+        <div class="my-12" x-data="{ width: '10' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
                 bg-purple-400
                 rounded
                 h-6
                 text-center text-white text-sm
                 transition
-              "
-              :style="`width: ${width}%; transition: width 2s;`"
-              x-text="'Africa'"
-            >
-              <i class="flag flag-russia"></i>
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Africa'">
+                        <i class="flag flag-russia"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
             </div>
-          </div>
-          <!-- End Regular with text version -->
         </div>
-      </div>
-      <div class="my-12" x-data="{ width: '6' }">
-        <!-- Light mode -->
-        <div class="mx-12 w-auto bg-white rounded">
-          <!-- Start Regular with text version -->
-          <div
-            class="bg-gray-400 rounded h-6 mt-5"
-            role="progressbar"
-            :aria-valuenow="width"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              class="
+        <div class="my-12" x-data="{ width: '6' }">
+            <!-- Light mode -->
+            <div class="mx-12 w-auto bg-white rounded">
+                <!-- Start Regular with text version -->
+                <div class="bg-gray-400 rounded h-6 mt-5" role="progressbar" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100">
+                    <div class="
                 bg-purple-400
                 rounded
                 h-6
                 text-center text-white text-sm
                 transition
-              "
-              :style="`width: ${width}%; transition: width 2s;`"
-              x-text="'Oceania'"
-            >
-              <i class="flag flag-switzerland"></i>
+              " :style="`width: ${width}%; transition: width 2s;`" x-text="'Oceania'">
+                        <i class="flag flag-switzerland"></i>
+                    </div>
+                </div>
+                <!-- End Regular with text version -->
             </div>
-          </div>
-          <!-- End Regular with text version -->
         </div>
-      </div>
     </div>
 
     <div class="section section-hosts" id="hosts">
-      <div class="section-title"><strong>Meet the hosts</strong></div>
-      <div class="host-container">
-        <div class="host-item">
-          <div class="photo">
-            <img src="assets/img/moi.jpg" alt="" />
-          </div>
-          <div class="host-text">
-            <div class="title">
-              <strong>Mirko</strong>
-            </div>
-            <div class="subtitle">Host</div>
-            <div class="text">
-              Most people talk without listening. Very few listen without
-              speaking. It is very rare to find someone who knows how to talk
-              and listen.
-            </div>
-          </div>
-          <div class="icons">
-            <a
-              href="https://instagram.com/mirko_rovere"
-              class="about__social-icon"
-              ><i class="bx bxl-instagram"></i
+        <div class="section-title"><strong>Meet the hosts</strong></div>
+        <div class="host-container">
+            <div class="host-item">
+                <div class="photo">
+                    <img src="assets/img/moi.jpg" alt="" />
+                </div>
+                <div class="host-text">
+                    <div class="title">
+                        <strong>Mirko</strong>
+                    </div>
+                    <div class="subtitle">Host</div>
+                    <div class="text">
+                        Most people talk without listening. Very few listen without speaking. It is very rare to find someone who knows how to talk and listen.
+                    </div>
+                </div>
+                <div class="icons">
+                    <a href="https://instagram.com/mirko_rovere" class="about__social-icon"><i class="bx bxl-instagram"></i
             ></a>
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/reveal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
     <script src="assets/js/wave.js"></script>
-  </body>
+</body>
+
 </html>
