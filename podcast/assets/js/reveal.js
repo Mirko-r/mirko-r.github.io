@@ -3,14 +3,12 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
-    reset: true
+    reset: false
 })
-
 
 sr.reveal('.section-title', { delay: 200 })
 sr.reveal('#canvas', { delay: 200 })
 sr.reveal('.player', { delay: 300 })
-
 
 sr.reveal('.episodes', { delay: 200 })
 
