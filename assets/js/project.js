@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "Extractor",
-    cardImage: "https://github.com/Mirko-r/extractor/raw/main/gnome-shell-screenshot-OYDO40.png",
+    cardImage: "https://github.com/Mirko-r/extractor/raw/main/Extrattor1.0.png",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
     Githublink: "https://github.com/Mirko-r/extractor",
