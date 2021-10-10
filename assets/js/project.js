@@ -9,7 +9,7 @@ const projects = [
     title: "Notepy",
     cardImage: "https://github.com/Mirko-r/Notepy/raw/main/notepy2-5.jpg",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
+    Previewlink: "https://mirko-r.github.io/notepy/index.html",
     Githublink: "https://github.com/Mirko-r/Notepy",
   },
   {
