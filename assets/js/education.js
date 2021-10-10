@@ -6,12 +6,12 @@ const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
     title: "LPI 101",
-    cardImage: "assets/images/education-page/udemy.svg",
+    cardImage: "https://th.bing.com/th/id/OIP.Q_9_w44PVw32KV7NEYExygHaEr?pid=ImgDet&rs=1",
     moocLink: "",
   },
   {
     title: "LPI 102",
-    cardImage: "assets/images/education-page/udemy.svg",
+    cardImage: "https://th.bing.com/th/id/OIP.Q_9_w44PVw32KV7NEYExygHaEr?pid=ImgDet&rs=1",
     moocLink: "",
   },
   {
