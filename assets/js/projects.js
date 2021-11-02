@@ -27,8 +27,8 @@ const research = [{
         authors: "Mirko Rovere",
         conferences: "Extractor is a cli Linux utility to extract one or more archives from the terminal",
         researchYr: 2020,
-        citebox: "https://github.com/Mirko-r/extractor",
-        image: "https://github.com/Mirko-r/extractor/raw/main/Extrattor1.0.png",
+        citebox: "https://github.com/Mirko-r/extrattor",
+        image: "https://github.com/Mirko-r/extrattor/raw/main/Extrattor1.0.png",
         abstract: "https://mirko-r.github.io/404.html",
     }
 
