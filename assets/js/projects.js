@@ -15,7 +15,7 @@ const research = [{
     {
         title: "Dotfiles",
         authors: "Mirko Rovere",
-        conferences: "Backup, Restore, Learn, Share",
+        conferences: "Huge .files repo",
         researchYr: 2021,
         citebox: "https://github.com/Mirko-r/extractor",
         image: "https://camo.githubusercontent.com/d2a503d4c4b870701247e650d85aebf94a770482217428c8e15c1bd6a2b31c8a/68747470733a2f2f74682e62696e672e636f6d2f74682f69642f4f49502e6937656f5a346b4d4c7543654a4f78756c456d313367486144423f7069643d496d674465742672733d31",
