@@ -2,12 +2,22 @@
 
 const researchTable = document.querySelector(".main");
 
-const research = [{
+const research = [
+  {
+    title: "baracle",
+    authors: "Mirko Rovere",
+    conferences: "Let's make a text editor like in the 70's",
+    researchYr: 2021,
+    citebox:"https://github.com/Mirko-r/baracle",
+    image: "https://github.com/Mirko-r/baracle/raw/master/img/baracle.png",
+    abstract: "https://mirko-r.github.io/404.html",
+  },
+  {
         title: "Notepy",
         authors: "Mirko Rovere",
         conferences: "Notepy is a full-featured Notepad Python app",
         researchYr: 2021,
-        citebox: "https://github.com/Mirko-r/Notep",
+        citebox: "https://github.com/Mirko-r/Notepy",
         image: "https://github.com/Mirko-r/Notepy/raw/main/notepy2-5.jpg",
         abstract: "https://mirko-r.github.io/notepy/index.html",
     },
@@ -15,7 +25,7 @@ const research = [{
     {
         title: "Dotfiles",
         authors: "Mirko Rovere",
-        conferences: "Backup, Restore, Learn, Share",
+        conferences: "Huge .files repo",
         researchYr: 2021,
         citebox: "https://github.com/Mirko-r/extractor",
         image: "https://camo.githubusercontent.com/d2a503d4c4b870701247e650d85aebf94a770482217428c8e15c1bd6a2b31c8a/68747470733a2f2f74682e62696e672e636f6d2f74682f69642f4f49502e6937656f5a346b4d4c7543654a4f78756c456d313367486144423f7069643d496d674465742672733d31",
@@ -47,7 +57,7 @@ const fillData = () => {
             abstract
         }) =>
         (output += `
-            <tr data-aos="zoom-in-left"> 
+            <tr data-aos="zoom-in-left">
                 <td class="imgCol"><img src="${image}" class="rImg"></td>
                 <td class = "researchTitleName">
                     <div>
@@ -55,14 +65,14 @@ const fillData = () => {
                             <img src="${image}" class="imgRes">
                         </span>
                     </div>
-                    <a href="#0" class="paperTitle"> ${title} </a> 
-                    <div> ${authors} </div> <div class="rConferences"> ${conferences} 
+                    <a href="#0" class="paperTitle"> ${title} </a>
+                    <div> ${authors} </div> <div class="rConferences"> ${conferences}
                         <div class="researchY">${researchYr}</div>
                     </div>
-        
+
                     <!--CITE BUTTON-->
                     <div class="d-flex" style="margin-right:5%">
-                        
+
                             <a href="${abstract}" style="color:white;">
                             <button class="button button-accent button-small text-right button-abstract " type="button" >
                             SITE
@@ -74,7 +84,7 @@ const fillData = () => {
                             GITHUB
                             </button>
                             </a>
-                        
+
                     </div>
                 </td>
             </tr>`)
