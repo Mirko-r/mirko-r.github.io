@@ -4,6 +4,15 @@ const researchTable = document.querySelector(".main");
 
 const research = [
   {
+    title: "MdEdit",
+    authors: "Mirko Rovere",
+    conferences: "Markdown editor in NodeJs and Typescript",
+    researchYr: 2021,
+    citebox: "https://github.com/Mirko-r/MdEdit",
+    image: "https://github.com/Mirko-r/MdEdit/blob/master/img/2021-11-18_13-11-1637239720.jpg?raw=true",
+    abstract: "https://mirko-r.github.io/404.html",
+  },
+  {
     title: "baracle",
     authors: "Mirko Rovere",
     conferences: "Let's make a text editor like in the 70's",
