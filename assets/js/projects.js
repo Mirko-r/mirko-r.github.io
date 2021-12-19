@@ -27,7 +27,7 @@ const research = [
         conferences: "Notepy is a full-featured Notepad Python app",
         researchYr: 2021,
         citebox: "https://github.com/Mirko-r/Notepy",
-        image: "https://github.com/Mirko-r/Notepy/raw/main/notepy2-5.jpg",
+        image: "https://github.com/Mirko-r/Notepy/raw/main/data/Notepy.jpg",
         abstract: "https://mirko-r.github.io/notepy/index.html",
     },
 
