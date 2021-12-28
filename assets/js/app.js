@@ -18,10 +18,10 @@ let header = $(`
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
    <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">My projects</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="carreer.html">Carreer</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://anchor.fm/stupidamente" target="_blank">Podcast</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="https://paypal.me/stupidamentepod" target="_blank">Support my work</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="https://paypal.me/stupidamentepod" target="_blank">Support me</a></li>
    <li class="nav-item">
    <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
    </li>
