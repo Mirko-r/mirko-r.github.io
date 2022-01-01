@@ -16,17 +16,17 @@ window.onload = function () {
   document.addEventListener("visibilitychange", function (e) {
     if (!document.hidden) {
       document.title = pageTitle;
-      favicon.href = "./assets/images/dp_male.svg";
+      favicon.href = "https://raw.githubusercontent.com/Mirko-r/mirko-r.github.io/main/assets/images/dp_male.svg";
     }
   });
 
   function toggle() {
     if (document.title === attentionMessage) {
         document.title = pageTitle;
-        favicon.href = "./assets/images/dp_male.svg";
+        favicon.href = "https://raw.githubusercontent.com/Mirko-r/mirko-r.github.io/main/assets/images/dp_male.svg";
     } else {
         document.title = attentionMessage;
-        favicon.href = "./assets/images/folded.png";
+        favicon.href = "https://github.com/Mirko-r/mirko-r.github.io/blob/main/assets/images/folded.png?raw=true";
     }
   }   
 };
