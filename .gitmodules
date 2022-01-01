@@ -1,0 +1,3 @@
+[submodule "statuspage"]
+	path = statuspage
+	url = git@github.com:Mirko-r/statuspage.git
