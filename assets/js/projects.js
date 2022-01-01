@@ -28,7 +28,7 @@ const research = [
         researchYr: 2021,
         citebox: "https://github.com/Mirko-r/Notepy",
         image: "https://github.com/Mirko-r/Notepy/raw/main/data/Notepy.jpg",
-        abstract: "https://mirko-r.github.io/notepy/index.html",
+        abstract: "https://mirko-r.github.io/Notepy",
     },
     {
         title: "Extractor",
