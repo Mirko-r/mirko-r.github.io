@@ -31,7 +31,7 @@ const research = [
         abstract: "https://mirko-r.github.io/Notepy",
     },
     {
-        title: "Extractor",
+        title: "Extrattor",
         authors: "Mirko Rovere",
         conferences: "A bash wrapper to manage one or more archives from the terminal",
         researchYr: 2020,
