@@ -4,3 +4,6 @@
 [submodule "Notepy"]
 	path = Notepy
 	url = git@github.com:Mirko-r/Notepy.git
+[submodule "WebCv"]
+	path = WebCv
+	url = git@github.com:Mirko-r/WebCv.git
