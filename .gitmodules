@@ -1,0 +1,6 @@
+[submodule "statuspage"]
+	path = statuspage
+	url = git@github.com:Mirko-r/statuspage.git
+[submodule "Notepy"]
+	path = Notepy
+	url = git@github.com:Mirko-r/Notepy.git
