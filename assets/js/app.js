@@ -20,6 +20,7 @@ let header = $(`
    <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="carreer.html">Carreer</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="https://mirko-r.github.io/blog">Blog</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://anchor.fm/stupidamente" target="_blank">Podcast</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://paypal.me/stupidamentepod" target="_blank">Support me</a></li>
    <li class="nav-item">
