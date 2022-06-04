@@ -1,11 +1,9 @@
 User-agent: Googlebot
 User-agent: AdsBot-Google
-Disallow: /
 Allow: /blog/*
 
 User-agent: Googlebot-news
 Allow: /blog/*
 
 User-agent: *
-Disallow: /
 Allow: /blog/*
