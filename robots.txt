@@ -1,5 +1,5 @@
-User-agent: Googlebot
-User-agent: AdsBot-Google
+Sitemap: https://mirko-r.github.io/sitemap.xml
+
 User-agent: *
 Allow: /blog/*
 Allow: /*
