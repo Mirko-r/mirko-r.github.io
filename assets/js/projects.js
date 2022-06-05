@@ -3,6 +3,14 @@
 const researchTable = document.querySelector(".main");
 
 const research = [
+    {
+        title: "SeaShell",
+        authors: "Mirko Rovere",
+        conferences: "UNIX Shell in C",
+        researchYr: 2022,
+        citebox: "https://github.com/Mirko-r/SeaShell",
+        image: "#",
+      },
   {
     title: "MdEdit",
     authors: "Mirko Rovere",
@@ -10,7 +18,6 @@ const research = [
     researchYr: 2021,
     citebox: "https://github.com/Mirko-r/MdEdit",
     image: "https://github.com/Mirko-r/MdEdit/blob/master/img/2021-11-18_13-11-1637239720.jpg?raw=true",
-    abstract: "https://mirko-r.github.io/404.html",
   },
   {
     title: "baracle",
@@ -19,7 +26,6 @@ const research = [
     researchYr: 2021,
     citebox:"https://github.com/Mirko-r/baracle",
     image: "https://github.com/Mirko-r/baracle/raw/master/img/baracle.png",
-    abstract: "https://mirko-r.github.io/404.html",
   },
   {
         title: "Notepy",
@@ -27,17 +33,15 @@ const research = [
         conferences: "Notepy is a full-featured Notepad Python app",
         researchYr: 2021,
         citebox: "https://github.com/Mirko-r/Notepy",
-        image: "https://github.com/Mirko-r/Notepy/raw/main/data/Notepy.jpg",
-        abstract: "https://mirko-r.github.io/Notepy",
+        image: "https://github.com/Mirko-r/Notepy/raw/main/img/Notepy.jpg",
     },
     {
         title: "Extrattor",
         authors: "Mirko Rovere",
-        conferences: "A bash wrapper to manage one or more archives from the terminal",
+        conferences: "Manage multiple archives from terminal",
         researchYr: 2020,
         citebox: "https://github.com/Mirko-r/extrattor",
         image: "https://github.com/Mirko-r/extrattor/raw/master/Extrattor1.0.png",
-        abstract: "https://mirko-r.github.io/404.html",
     }
 
 ];
@@ -51,8 +55,7 @@ const fillData = () => {
             authors,
             conferences,
             researchYr,
-            citebox,
-            abstract
+            citebox
         }) =>
         (output += `
             <tr data-aos="zoom-in-left">
@@ -70,13 +73,6 @@ const fillData = () => {
 
                     <!--CITE BUTTON-->
                     <div class="d-flex" style="margin-right:5%">
-
-                            <a href="${abstract}" style="color:white;">
-                            <button class="button button-accent button-small text-right button-abstract " type="button" >
-                            SITE
-                            </button>
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
                             <a href="${citebox}" style="color:white;">
                             <button class="button button-accent button-small text-right button-abstract " type="button" >
                             GITHUB
