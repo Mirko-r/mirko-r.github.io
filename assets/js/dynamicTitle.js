@@ -16,7 +16,7 @@ window.onload = function () {
   document.addEventListener("visibilitychange", function (e) {
     if (!document.hidden) {
       document.title = pageTitle;
-      favicon.href = "/assets/icons/favicon.png";
+      favicon.href = "/assets/images/favicon.png";
     }
   });
   
@@ -24,7 +24,7 @@ window.onload = function () {
   function toggle() {
     if (document.title === attentionMessage) {
         document.title = pageTitle;
-        favicon.href = "/assets/icons/favicon.png";
+        favicon.href = "/assets/images/favicon.png";
     } else {
         document.title = attentionMessage;
         favicon.href = "https://github.com/Mirko-r/mirko-r.github.io/blob/main/assets/images/folded.png?raw=true";
