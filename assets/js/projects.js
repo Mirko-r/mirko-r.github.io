@@ -3,14 +3,14 @@
 const researchTable = document.querySelector(".main");
 
 const research = [
-    {
+   /* {
         title: "SeaShell",
         authors: "Mirko Rovere",
         conferences: "UNIX Shell in C",
         researchYr: 2022,
         citebox: "https://github.com/Mirko-r/SeaShell",
         image: "#",
-      },
+      },*/
   {
     title: "MdEdit",
     authors: "Mirko Rovere",
