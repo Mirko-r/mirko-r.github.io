@@ -1,6 +1,9 @@
-# ========== mod_rewrite start here
 RewriteEngine on 
 
+# ========== specify character coding
+AddDefaultCharset utf-8 
+
+# ========== mod_rewrite start here
 # does not apply to dir
 RewriteCond %{REQUEST_FILENAME} -d 
 
@@ -8,5 +11,4 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # actually show the page.html
-
 RewriteRule ^(.*)$ $1.html [NC,L]
