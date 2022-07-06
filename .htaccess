@@ -12,3 +12,6 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # actually show the page.html
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+# ======== SEO Friendly 301 Permanent Redirects
+Redirect 301 https://mirko-rovere.netlify.app/index https://mirko-rovere.netlify.app/
