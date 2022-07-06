@@ -15,3 +15,14 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 # ======== SEO Friendly 301 Permanent Redirects
 Redirect 301 https://mirko-rovere.netlify.app/index https://mirko-rovere.netlify.app/
+
+# ======= Compress text, html, javascript, css, xml to have better load time
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
