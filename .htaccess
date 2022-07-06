@@ -1,0 +1,12 @@
+# ========== mod_rewrite start here
+RewriteEngine on 
+
+# does not apply to dir
+RewriteCond %{REQUEST_FILENAME} -d 
+
+# if not exist, don't run 
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# actually show the page.html
+
+RewriteRule ^(.*)$ $1.html [NC,L]
