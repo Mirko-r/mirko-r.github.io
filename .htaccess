@@ -1,7 +1,11 @@
 RewriteEngine on 
 
-# ========== specify character coding
-AddDefaultCharset utf-8 
+# ========= serve custom error pages
+# ErrorDocument 400 /errors/400.html
+# ErrorDocument 401 /errors/401.html
+# ErrorDocument 403 /errors/403.html
+ErrorDocument 404 404.html
+# ErrorDocument 500 /errors/500.html
 
 # ========== mod_rewrite start here
 # does not apply to dir
@@ -13,10 +17,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 # actually show the page.html
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-# ======== SEO Friendly 301 Permanent Redirects
-Redirect 301 https://mirko-rovere.netlify.app/index https://mirko-rovere.netlify.app/
-
-# ======== Improve loading time
+# ======== Performance
 # Compress text, html, javascript, css, xml to have better load time
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
@@ -32,6 +33,15 @@ AddOutputFilterByType DEFLATE application/x-javascript
 <FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
 Header set Cache-Control "max-age=2592000"
 </FilesMatch>
+
+# minimize image flicker in IE6
+ExpiresActive On
+ExpiresByType image/gif A2592000
+ExpiresByType image/jpg A2592000
+ExpiresByType image/png A2592000
+
+# specify character coding
+AddDefaultCharset utf-8 
 
 # ======= security
 
@@ -49,3 +59,21 @@ RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
 
 # Block out any script trying to modify a _REQUEST variable via URL
 RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
+
+# secure .htaccess file
+<Files .htaccess>
+	Order allow,deny
+	Deny from all
+</Files>
+
+# deny access to evil robots site rippers offline browsers and other nasty scum
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^Anarchie [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ASPSeek [OR]
+RewriteCond %{HTTP_USER_AGENT} ^attach [OR]
+RewriteCond %{HTTP_USER_AGENT} ^autoemailspider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xenu [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus.*Webster [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.* - [F,L]
