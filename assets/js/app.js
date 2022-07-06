@@ -17,9 +17,9 @@ let header = $(`
 
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="index">Home</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="projects">Projects</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="carreer.html">Carreer</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link" href="carreer">Carreer</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://mirko-r.github.io/blog">Blog</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://anchor.fm/stupidamente" target="_blank">Podcast</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://paypal.me/stupidamentepod" target="_blank">Support me</a></li>
