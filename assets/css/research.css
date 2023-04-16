@@ -80,6 +80,7 @@ body {
 /*Research page*/
 .container {
   background-color: var(--bg-col);
+  max--width: 100%;
 }
 .txt-bottom {
   height: 80vh;
