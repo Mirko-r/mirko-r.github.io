@@ -315,7 +315,6 @@ body {
 
 @media only screen and (max-width: 285px) and (max-height: 655px) {
   .imgResponsive .imgRes {
-    margin: -1.32em -1.26em 1.3em -1.3em;
     width: 406.7px;
     height: 260px;
     border-radius: 10px;
@@ -324,7 +323,6 @@ body {
 
 @media only screen and (max-width: 375px) and (max-height: 575px) {
   .imgResponsive .imgRes {
-    margin: -1.4em -1em 1.3em -1.3em;
     width: 406.7px;
     height: 260px;
     border-radius: 10px;
@@ -334,7 +332,6 @@ body {
 
 @media only screen and (max-width: 365px) and (max-height: 645px) {
   .imgResponsive .imgRes {
-    margin: -1.5em -1.3em 1.3em -1.4em;
     width: 406.7px;
     height: 260px;
     border-radius: 10px;
@@ -343,7 +340,6 @@ body {
 
 @media only screen and (max-width: 415px) and (max-height: 737px) {
   .imgResponsive .imgRes {
-    margin: -1.6em 1em 1.3em -1.4em;
     width: 406.7px;
     height: 260px;
     border-radius: 10px;
@@ -352,7 +348,6 @@ body {
 
 @media only screen and (max-width: 415px) and (max-height: 830px) {
   .imgResponsive .imgRes {
-    margin: -1.3em -1.3em 1.3em -1.3em;
     width: 406.7px;
     height: 260px;
     border-radius: 10px;
@@ -361,7 +356,6 @@ body {
 
 @media only screen and (max-width: 375px) and (max-height: 670px) {
   .imgResponsive .imgRes {
-    margin: -1.3em -1.3em 1.3em -1.3em;
     width: 406.7px;
     height: 260px;
     border-radius: 10px;
@@ -370,7 +364,6 @@ body {
 
 @media only screen and (max-width: 545px) and (min-width: 500px) and (max-height: 725px) {
   .imgResponsive .imgRes {
-    margin: -1em -1em 1.3em -1em;
     width: 406.7px;
     height: 260px;
     border-radius: 10px;
@@ -379,7 +372,6 @@ body {
 
 @media only screen and (max-width: 775px) and (max-height: 1030px) {
   .imgCol .rImg {
-    margin: -1.4em -1em -1.3em 0;
     width: 406.7px;
     height: 430px;
     border-radius: 10px;
