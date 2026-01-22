@@ -80,3 +80,8 @@ body {
   border-color: var(--nt-red) !important;
   transform: translateY(-2px);
 }
+
+.nt-dot-pattern {
+  background-image: radial-gradient(circle, #333 1px, transparent 1px);
+  background-size: 10px 10px;
+}

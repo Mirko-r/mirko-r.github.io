@@ -27,8 +27,17 @@ const techStack = [
   "Flutter",
   "Bash",
   "C",
-  "Rust"
+  "Rust",
 ];
+
+const currentYear = new Date().getFullYear();
+const lastSync = new Date()
+  .toLocaleDateString("en-GB")
+  .toUpperCase()
+  .split("/")
+  .join("_");
+
+const email = "rovere04@gmail.com";
 ---
 
 <html lang="it">
@@ -57,7 +66,7 @@ const techStack = [
           <p
             class="text-zinc-500 font-mono text-xs md:text-sm tracking-[0.5em] uppercase italic"
           >
-            [ Software_Developer // v.2026 ]
+            [ Software_Developer // v.{currentYear} ]
           </p>
         </div>
       </section>
@@ -204,14 +213,111 @@ const techStack = [
         </div>
       </section>
 
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <section
+          class="nt-card md:col-span-7 group relative overflow-hidden flex flex-col justify-between"
+        >
+          <div
+            class="absolute right-0 top-0 h-full w-32 nt-dot-pattern opacity-10 pointer-events-none"
+          >
+          </div>
+
+          <div class="relative z-10">
+            <h2 class="nt-title mb-12">/ System_Export</h2>
+            <h3
+              class="text-4xl md:text-6xl font-black uppercase tracking-tighter text-main italic leading-none"
+            >
+              Curriculum<br />Vitae
+            </h3>
+          </div>
+
+          <div class="relative z-10 flex items-end justify-between mt-12">
+            <p
+              class="text-[9px] font-mono text-muted uppercase tracking-[0.2em]"
+            >
+              Data_Stream: STBL_{currentYear} // {lastSync}
+            </p>
+            <a
+              href="/assets/cv_mirko_rovere.pdf"
+              download
+              class="h-16 w-16 bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:bg-[var(--nt-red)] group-hover:border-[var(--nt-red)] transition-all duration-500"
+            >
+              <span
+                class="text-white text-2xl group-hover:translate-y-1 transition-transform"
+                >↓</span
+              >
+            </a>
+          </div>
+        </section>
+
+        <div class="md:col-span-5 grid grid-rows-2 gap-8">
+          <a
+            href={"mailto:" + email}
+            class="nt-card !p-8 group/mail flex flex-col justify-between hover:border-white transition-colors relative overflow-hidden"
+          >
+            <div class="flex justify-between items-start relative z-10">
+              <span
+                class="text-[9px] font-mono text-muted uppercase tracking-widest"
+                >Comm_Link</span
+              >
+              <div
+                class="h-2 w-2 rounded-full bg-[var(--nt-red)] animate-pulse"
+              >
+              </div>
+            </div>
+            <div class="relative z-10">
+              <p
+                class="text-2xl font-black uppercase tracking-tighter text-main group-hover/mail:text-[var(--nt-red)] transition-colors"
+              >
+                Email_Host
+              </p>
+              <p class="text-[10px] font-mono text-muted mt-1">{email}</p>
+            </div>
+          </a>
+
+          <div class="grid grid-cols-2 gap-4">
+            <a
+              href="https://www.linkedin.com/in/mirko-rovere-695a67203"
+              target="_blank"
+              class="nt-card aspect-square flex flex-col items-center justify-center group/soc hover:border-white transition-all"
+            >
+              <div
+                class="text-4xl mb-2 text-zinc-800 group-hover/soc:text-[var(--nt-red)] transition-colors italic"
+              >
+                LinkedIn
+              </div>
+              <span
+                class="text-[8px] font-mono text-muted tracking-[0.3em] uppercase"
+                >Professional_Net</span
+              >
+            </a>
+            <a
+              href="https://github.com/Mirko-r"
+              target="_blank"
+              class="nt-card aspect-square flex flex-col items-center justify-center group/soc hover:border-[var(--nt-red)] transition-all"
+            >
+              <div
+                class="text-4xl mb-2 text-zinc-800 group-hover/soc:text-[var(--nt-red)] transition-colors italic"
+              >
+                GitHub
+              </div>
+              <span
+                class="text-[8px] font-mono text-muted tracking-[0.3em] uppercase"
+                >Source_Control</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+
       <footer
         class="py-24 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-8"
       >
         <p
           class="text-[10px] text-zinc-600 font-mono uppercase tracking-[0.5em]"
         >
-          © 2026 MIRKO R. <span class="text-[var(--nt-red)] animate-pulse"
-            >_</span
+          © {currentYear} MIRKO R. <span
+            class="text-[var(--nt-red)] animate-pulse">_</span
           > SYSTEM_STBL
         </p>
       </footer>
