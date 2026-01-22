@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --nt-red: #ff0037;
+  --nt-bg: #000000;
+  --nt-card: #0a0a0a;
+  --nt-border: #1a1a1a;
+  --nt-text: #ffffff;
+  --nt-text-muted: #888888;
+}
+
+body {
+  background-color: var(--nt-bg);
+  background-image: radial-gradient(circle at 1px 1px, var(--nt-border) 1px, transparent 0);
+  background-size: 40px 40px;
+  color: var(--nt-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nt-card {
+  background: var(--nt-card);
+  border: 1px solid var(--nt-border);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -ms-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  -o-transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nt-card:hover {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  transform: translateY(-4px);
+  --nt-text: #000000 !important;
+  --nt-text-muted: #555555 !important;
+  box-shadow: 0 20px 40px -15px #888;
+}
+
+.nt-title {
+  color: var(--nt-text-muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-family: ui-monospace, monospace;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+}
+
+.nt-title::before {
+  content: "";
+  width: 12px;
+  height: 1px;
+  background: var(--nt-red);
+}
+
+.text-main { color: var(--nt-text); transition: color 0.3s ease; }
+.text-muted { color: var(--nt-text-muted); transition: color 0.3s ease; }
+
+.tech-tag {
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.nt-card:hover .tech-tag {
+  border-color: #e4e4e7;
+}
+
+.tech-tag:hover {
+  background: var(--nt-red) !important;
+  color: white !important;
+  border-color: var(--nt-red) !important;
+  transform: translateY(-2px);
+}

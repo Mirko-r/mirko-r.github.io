@@ -1,8 +1,0 @@
-Sitemap: https://mirko-r.github.io/sitemap.xml
-
-User-agent: *
-Allow: /blog/*
-Allow: /*
-
-User-agent: Googlebot-news
-Allow: /blog/*
