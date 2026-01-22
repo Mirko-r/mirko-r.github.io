@@ -49,22 +49,24 @@ const email = "rovere04@gmail.com";
   <body class="p-6 md:p-16 selection:bg-[var(--nt-red)] selection:text-white">
     <main class="max-w-6xl mx-auto space-y-24">
       <section
-        class="py-24 md:py-32 flex flex-col items-start relative group/hero"
+        class="py-20 md:py-32 flex flex-col items-start relative group/hero overflow-visible"
       >
-        <div class="relative">
+        <div class="relative w-full">
           <h1
-            class="text-[18vw] md:text-[12rem] font-black uppercase tracking-tighter leading-[0.75] text-white"
+            class="text-[16vw] md:text-[12rem] font-normal uppercase tracking-[0.02em] leading-[0.8] text-white dotted-font"
           >
             Mirko<br /> Rovere
           </h1>
-          <div class="absolute -top-4 -right-12 md:-right-20">
-            <StatusDot size="h-8 w-8 md:h-14 md:w-14" client:load />
-          </div>
+
+          <div class="absolute -top-4 right-0 md:-top-8">
+      <StatusDot size="h-10 w-10 md:h-16 md:w-16" client:load />
+    </div>
         </div>
+
         <div class="mt-12 flex items-center gap-6">
           <div class="h-px w-12 bg-zinc-800"></div>
           <p
-            class="text-zinc-500 font-mono text-xs md:text-sm tracking-[0.5em] uppercase italic"
+            class="text-zinc-500 font-mono text-[10px] md:text-xs tracking-[0.5em] uppercase italic"
           >
             [ Software_Developer // v.{currentYear} ]
           </p>
@@ -127,21 +129,26 @@ const email = "rovere04@gmail.com";
         </section>
 
         <section
-          class="nt-card md:col-span-4 flex flex-col items-center justify-center text-center group"
+          class="nt-card md:col-span-4 flex flex-col items-center justify-between text-center group min-h-[400px] md:min-h-[450px] relative overflow-hidden"
         >
           <h2 class="nt-title absolute top-10 left-10">/ Nodes</h2>
-          <div
-            class="text-[13rem] font-black leading-none tracking-tighter transition-all duration-700 text-main group-hover:scale-110"
-          >
-            {projects.length.toString().padStart(2, "0")}
+
+          <div class="flex-1 flex items-center justify-center w-full">
+            <div
+              class="text-[30vw] md:text-[13rem] leading-[1] transition-all duration-700 text-main group-hover:scale-110 dotted-font tabular-nums"
+              style="font-weight: 400; letter-spacing: -0.05em; text-indent: -0.05em; display: flex; justify-content: center; width: 100%;"
+            >
+              {projects.length.toString().padStart(2, "0")}
+            </div>
           </div>
-          <div class="mt-4 flex flex-col items-center">
+
+          <div class="mb-10 flex flex-col items-center relative z-10">
             <div
               class="h-1 w-8 bg-[var(--nt-red)] mb-4 transition-all group-hover:w-24"
             >
             </div>
             <p
-              class="text-[10px] uppercase font-mono tracking-[0.5em] italic text-muted"
+              class="text-[9px] md:text-[10px] uppercase font-mono tracking-[0.5em] italic text-muted"
             >
               Verified_Deployments
             </p>
@@ -184,7 +191,7 @@ const email = "rovere04@gmail.com";
                       </span>
                     </div>
 
-                    <h3 class="text-3xl md:text-5xl font-black uppercase tracking-tighter text-main">
+                    <h3 class="text-3xl md:text-5xl font-normal uppercase tracking-widest text-main dotted-font leading-tight">
                       {p.data.title}
                     </h3>
 
@@ -225,7 +232,7 @@ const email = "rovere04@gmail.com";
           <div class="relative z-10">
             <h2 class="nt-title mb-12">/ System_Export</h2>
             <h3
-              class="text-4xl md:text-6xl font-black uppercase tracking-tighter text-main italic leading-none"
+              class="text-4xl md:text-6xl font-normal uppercase tracking-widest text-main leading-[0.9] dotted-font"
             >
               Curriculum<br />Vitae
             </h3>
@@ -256,10 +263,7 @@ const email = "rovere04@gmail.com";
             class="nt-card !p-8 group/mail flex flex-col justify-between hover:border-white transition-colors relative overflow-hidden"
           >
             <div class="flex justify-between items-start relative z-10">
-              <span
-                class="text-[9px] font-mono text-muted uppercase tracking-widest"
-                >Comm_Link</span
-              >
+              <h2 class="nt-title mb-12">/ Comm_link</h2>
               <div
                 class="h-2 w-2 rounded-full bg-[var(--nt-red)] animate-pulse"
               >

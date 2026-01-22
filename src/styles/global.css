@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'NDOT47';
+  src: url('/assets/ndot-47-inspired-by-nothing.otf.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --nt-red: #ff0037;
   --nt-bg: #000000;
@@ -7,6 +15,7 @@
   --nt-border: #1a1a1a;
   --nt-text: #ffffff;
   --nt-text-muted: #888888;
+  --font-dotted: 'NDOT47', 'Silkscreen', monospace;
 }
 
 body {
@@ -84,4 +93,25 @@ body {
 .nt-dot-pattern {
   background-image: radial-gradient(circle, #333 1px, transparent 1px);
   background-size: 10px 10px;
+}
+
+.dotted-font {
+  font-family: var(--font-dotted);
+  font-weight: 400 !important; 
+  line-height: 1.2;
+  letter-spacing: 0.2em; 
+  filter: contrast(150%) brightness(110%);
+  /* Rende il testo "pixel perfect" */
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+  text-rendering: pixelated;
+  text-transform: uppercase;
+  color: #e0e0e0;
+}
+
+/* Effetto "Schermo Acceso" per l'hover */
+.nt-card:hover .dotted-font {
+  color: var(--nt-red);
+  /* Un bagliore impercettibile che simula i LED */
+  text-shadow: 0 0 5px rgba(255, 0, 55, 0.3);
 }
