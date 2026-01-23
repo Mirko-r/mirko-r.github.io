@@ -96,12 +96,14 @@ const email = "rovere04@gmail.com";
           <div class="flex flex-wrap gap-2">
             {
               techStack.map((s) => (
-                <span class="flex items-center gap-2 px-4 py-2 border border-zinc-900 rounded-full text-[10px] font-bold uppercase tracking-widest text-main transition-all hover:border-[var(--nt-red)] hover:text-[var(--nt-red)] group/tag">
+                <span class="flex items-center gap-2 px-4 py-2 border border-zinc-900 rounded-full text-[10px] font-bold uppercase tracking-widest text-main transition-all duration-300 hover:border-[var(--nt-red)] hover:bg-[var(--nt-red)] group/tag cursor-default">
                   <Icon
                     name={s.icon}
-                    class="w-3 h-3 opacity-50 group-hover/tag:opacity-100 transition-opacity"
+                    class="w-3 h-3 opacity-50 group-hover/tag:opacity-100 group-hover/tag:text-white transition-all"
                   />
-                  {s.name}
+                  <span class="group-hover/tag:text-white transition-colors">
+                    {s.name}
+                  </span>
                 </span>
               ))
             }
