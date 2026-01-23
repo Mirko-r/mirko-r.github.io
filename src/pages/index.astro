@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import { getCollection } from "astro:content";
 import SystemStat from "../components/SystemStat";
-import StatusDot from "../components/StatusDot";
+import { Icon } from "astro-icon/components";
 
 const allProjects = await getCollection("projects");
 const allCareer = await getCollection("career");
@@ -57,10 +57,6 @@ const email = "rovere04@gmail.com";
           >
             Mirko<br /> Rovere
           </h1>
-
-          <div class="absolute -top-4 right-0 md:-top-8">
-      <StatusDot size="h-10 w-10 md:h-16 md:w-16" client:load />
-    </div>
         </div>
 
         <div class="mt-12 flex items-center gap-6">
@@ -77,7 +73,10 @@ const email = "rovere04@gmail.com";
         <section
           class="nt-card md:col-span-5 group flex flex-col justify-between"
         >
-          <h2 class="nt-title">/ Internal_Clock</h2>
+          <div class="flex items-center gap-2">
+            <Icon name="lucide:clock-4" class="w-4 h-4 text-[var(--nt-red)]" />
+            <h2 class="nt-title">/ Internal_Clock</h2>
+          </div>
           <div class="py-8">
             <SystemStat client:load />
           </div>
@@ -85,7 +84,10 @@ const email = "rovere04@gmail.com";
 
         <section class="nt-card md:col-span-7 group">
           <div class="flex justify-between items-center mb-10">
-            <h2 class="nt-title">/ Tech_Stack</h2>
+            <div class="flex items-center gap-2">
+              <Icon name="lucide:cpu" class="w-4 h-4 text-[var(--nt-red)]" />
+              <h2 class="nt-title">/ Tech_Stack</h2>
+            </div>
             <span
               class="text-[9px] font-mono text-muted tracking-widest uppercase"
               >Kernel_Modules</span
@@ -105,7 +107,10 @@ const email = "rovere04@gmail.com";
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
         <section class="nt-card md:col-span-8 group">
-          <h2 class="nt-title mb-12">/ Experience_Logs</h2>
+          <div class="flex items-center gap-2 mb-12">
+            <Icon name="lucide:database" class="w-4 h-4 text-[var(--nt-red)]" />
+            <h2 class="nt-title">/ Experience_Logs</h2>
+          </div>
           <div class="space-y-12">
             {
               career.slice(0, 3).map((job) => (
@@ -131,7 +136,10 @@ const email = "rovere04@gmail.com";
         <section
           class="nt-card md:col-span-4 flex flex-col items-center justify-between text-center group min-h-[400px] md:min-h-[450px] relative overflow-hidden"
         >
-          <h2 class="nt-title absolute top-10 left-10">/ Nodes</h2>
+          <div class="absolute top-10 left-10 flex items-center gap-2">
+            <Icon name="lucide:network" class="w-4 h-4 text-[var(--nt-red)]" />
+            <h2 class="nt-title">/ Nodes</h2>
+          </div>
 
           <div class="flex-1 flex items-center justify-center w-full">
             <div
@@ -161,7 +169,13 @@ const email = "rovere04@gmail.com";
           class="flex items-end justify-between px-4 border-b border-zinc-900 pb-6"
         >
           <div>
-            <h2 class="nt-title text-main">/ Project_Database</h2>
+            <div class="flex items-center gap-3">
+              <Icon
+                name="lucide:folder-git-2"
+                class="w-5 h-5 text-[var(--nt-red)]"
+              />
+              <h2 class="nt-title text-main">/ Project_Database</h2>
+            </div>
             <p
               class="text-[9px] font-mono text-muted mt-2 uppercase tracking-[0.2em]"
             >
@@ -210,7 +224,10 @@ const email = "rovere04@gmail.com";
 
                   <div class="flex items-center justify-end">
                     <div class="h-14 w-14 md:h-20 md:w-20 rounded-full border border-zinc-900 flex items-center justify-center group-hover:bg-black group-hover:border-black transition-all duration-500 group-hover:rotate-45">
-                      <span class="text-white text-3xl md:text-4xl">→</span>
+                      <Icon
+                        name="lucide:arrow-right"
+                        class="text-white text-3xl md:text-4xl group-hover:text-white transition-transform duration-500 group-hover:scale-110"
+                      />
                     </div>
                   </div>
                 </div>
@@ -230,7 +247,13 @@ const email = "rovere04@gmail.com";
           </div>
 
           <div class="relative z-10">
-            <h2 class="nt-title mb-12">/ System_Export</h2>
+            <div class="flex items-center gap-2 mb-12">
+              <Icon
+                name="lucide:file-output"
+                class="w-4 h-4 text-[var(--nt-red)]"
+              />
+              <h2 class="nt-title">/ System_Export</h2>
+            </div>
             <h3
               class="text-4xl md:text-6xl font-normal uppercase tracking-widest text-main leading-[0.9] dotted-font"
             >
@@ -249,10 +272,10 @@ const email = "rovere04@gmail.com";
               download
               class="h-16 w-16 bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:bg-[var(--nt-red)] group-hover:border-[var(--nt-red)] transition-all duration-500"
             >
-              <span
+              <Icon
+                name="lucide:download"
                 class="text-white text-2xl group-hover:translate-y-1 transition-transform"
-                >↓</span
-              >
+              />
             </a>
           </div>
         </section>
@@ -263,7 +286,13 @@ const email = "rovere04@gmail.com";
             class="nt-card !p-8 group/mail flex flex-col justify-between hover:border-white transition-colors relative overflow-hidden"
           >
             <div class="flex justify-between items-start relative z-10">
-              <h2 class="nt-title mb-12">/ Comm_link</h2>
+              <div class="flex items-center gap-2">
+                <Icon
+                  name="lucide:terminal"
+                  class="w-4 h-4 text-[var(--nt-red)]"
+                />
+                <h2 class="nt-title">/ Comm_link</h2>
+              </div>
               <div
                 class="h-2 w-2 rounded-full bg-[var(--nt-red)] animate-pulse"
               >
@@ -288,7 +317,10 @@ const email = "rovere04@gmail.com";
               <div
                 class="text-4xl mb-2 text-zinc-800 group-hover/soc:text-[var(--nt-red)] transition-colors italic"
               >
-                LinkedIn
+                <Icon
+                  name="lucide:linkedin"
+                  class="w-10 h-10 mb-2 text-white group-hover/soc:text-[var(--nt-red)] transition-colors"
+                />
               </div>
               <span
                 class="text-[8px] font-mono text-muted tracking-[0.3em] uppercase"
@@ -303,7 +335,10 @@ const email = "rovere04@gmail.com";
               <div
                 class="text-4xl mb-2 text-zinc-800 group-hover/soc:text-[var(--nt-red)] transition-colors italic"
               >
-                GitHub
+                <Icon
+                  name="lucide:github"
+                  class="w-10 h-10 mb-2 text-white group-hover/soc:text-[var(--nt-red)] transition-colors"
+                />
               </div>
               <span
                 class="text-[8px] font-mono text-muted tracking-[0.3em] uppercase"

@@ -64,13 +64,6 @@ body {
   transition: color 0.3s ease;
 }
 
-.nt-title::before {
-  content: "";
-  width: 12px;
-  height: 1px;
-  background: var(--nt-red);
-}
-
 .text-main { color: var(--nt-text); transition: color 0.3s ease; }
 .text-muted { color: var(--nt-text-muted); transition: color 0.3s ease; }
 
@@ -114,4 +107,9 @@ body {
   color: var(--nt-red);
   /* Un bagliore impercettibile che simula i LED */
   text-shadow: 0 0 5px rgba(255, 0, 55, 0.3);
+}
+
+[data-icon] {
+  stroke-width: 1.5px !important;
+  vector-effect: non-scaling-stroke;
 }
