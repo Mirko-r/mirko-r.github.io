@@ -20,11 +20,16 @@
 
 body {
   background-color: var(--nt-bg);
-  background-image: radial-gradient(circle at 1px 1px, var(--nt-border) 1px, transparent 0);
-  background-size: 40px 40px;
+  background-image: radial-gradient(circle, #111 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--nt-text);
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  cursor: crosshair;
+}
+
+a, button, .nt-card {
+  cursor: cell;
 }
 
 .nt-card {
@@ -43,12 +48,14 @@ body {
 }
 
 .nt-card:hover {
-  background-color: #ffffff !important;
+  background-color: #d3d3d3 !important;
   border-color: #ffffff !important;
-  transform: translateY(-4px);
+  box-shadow: 
+    0 20px 40px -15px rgba(255, 255, 255, 0.2),
+    inset 0 0 20px rgba(0, 0, 0, 0.05);
+  transform: translateY(-8px) scale(1.01);
   --nt-text: #000000 !important;
   --nt-text-muted: #555555 !important;
-  box-shadow: 0 20px 40px -15px #888;
 }
 
 .nt-title {
@@ -64,8 +71,15 @@ body {
   transition: color 0.3s ease;
 }
 
-.text-main { color: var(--nt-text); transition: color 0.3s ease; }
-.text-muted { color: var(--nt-text-muted); transition: color 0.3s ease; }
+.text-main {
+  color: var(--nt-text);
+  transition: color 0.3s ease;
+}
+
+.text-muted {
+  color: var(--nt-text-muted);
+  transition: color 0.3s ease;
+}
 
 .tech-tag {
   transition: all 0.3s ease;
@@ -90,9 +104,9 @@ body {
 
 .dotted-font {
   font-family: var(--font-dotted);
-  font-weight: 400 !important; 
+  font-weight: 400 !important;
   line-height: 1.2;
-  letter-spacing: 0.2em; 
+  letter-spacing: 0.2em;
   filter: contrast(150%) brightness(110%);
   /* Rende il testo "pixel perfect" */
   -webkit-font-smoothing: none;
