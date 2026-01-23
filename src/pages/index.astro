@@ -18,16 +18,16 @@ const career = allCareer.sort((a, b) => {
 });
 
 const techStack = [
-  "React",
-  ".NET",
-  "C#",
-  "SQL",
-  "Java",
-  "Kotlin",
-  "Flutter",
-  "Bash",
-  "C",
-  "Rust",
+  { name: "React", icon: "lucide:atom" },
+  { name: ".NET", icon: "lucide:layers" },
+  { name: "C#", icon: "lucide:hash" },
+  { name: "SQL", icon: "lucide:database" },
+  { name: "Java", icon: "lucide:coffee" },
+  { name: "Kotlin", icon: "lucide:smartphone" },
+  { name: "Flutter", icon: "lucide:tablet-smartphone" },
+  { name: "Bash", icon: "lucide:terminal" },
+  { name: "C", icon: "lucide:binary" },
+  { name: "Rust", icon: "lucide:ferris-wheel" },
 ];
 
 const currentYear = new Date().getFullYear();
@@ -96,8 +96,12 @@ const email = "rovere04@gmail.com";
           <div class="flex flex-wrap gap-2">
             {
               techStack.map((s) => (
-                <span class="px-4 py-2 border border-zinc-900 rounded-full text-[10px] font-bold uppercase tracking-widest text-main transition-colors border-inherit tech-tag">
-                  {s}
+                <span class="flex items-center gap-2 px-4 py-2 border border-zinc-900 rounded-full text-[10px] font-bold uppercase tracking-widest text-main transition-all hover:border-[var(--nt-red)] hover:text-[var(--nt-red)] group/tag">
+                  <Icon
+                    name={s.icon}
+                    class="w-3 h-3 opacity-50 group-hover/tag:opacity-100 transition-opacity"
+                  />
+                  {s.name}
                 </span>
               ))
             }
